@@ -11,7 +11,7 @@ def home():
 
 @app.route('/api/weather/current')
 def weather_current():
-    city = request.args.get('city', 'Unknown')
+    city = request.args.get('city', 'London')
     return jsonify({
         'city': city,
         'temperature_c': 25,
@@ -21,7 +21,7 @@ def weather_current():
 
 @app.route('/api/weather/forecast')
 def weather_forecast():
-    city = request.args.get('city', 'Unknown')
+    city = request.args.get('city', 'Paris')
     days = int(request.args.get('days', 3))
 
     forecast = []
