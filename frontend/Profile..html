@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+	
 </head>
 <body>
 
@@ -50,10 +52,16 @@
         <textarea placeholder="Welcome"></textarea><br><br>
         <button type="submit">Send</button>
     </form>
+    <h2>Theme Switcher</h2>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <h2>Click Counter</h2>
+    <p id="clickCount">Clicks: 0</p>
+    <button onclick="countClicks()">Click Me</button>
 
     <h2>My Photo</h2>
     <!-- Challenge: Add your image here -->
-    <img src="C:\Users\New user\OneDrive\Pictures\IMG_0198.jpg" alt="My Photo" width="200">
-
+    <img src="C:\Users\New user\OneDrive\Pictures\PXL_20250419_150918082.RAW-01.COVER.jpg" alt="My Photo" width="200">
+    <script src="script.js"></script>
 </body>
 </html>
